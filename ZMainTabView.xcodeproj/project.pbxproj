@@ -18,6 +18,10 @@
 		047C07A523ED943F00B52D28 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C07A223ED943F00B52D28 /* ThirdViewController.swift */; };
 		047C07A623ED943F00B52D28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C07A323ED943F00B52D28 /* ViewController.swift */; };
 		047C07A723ED943F00B52D28 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C07A423ED943F00B52D28 /* SecondViewController.swift */; };
+		047C07AE23ED962800B52D28 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C07A923ED962800B52D28 /* MainTabView.swift */; };
+		047C07AF23ED962800B52D28 /* MainTabViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C07AB23ED962800B52D28 /* MainTabViewDataSource.swift */; };
+		047C07B023ED962800B52D28 /* MainTabDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C07AD23ED962800B52D28 /* MainTabDelegate.swift */; };
+		047C07B223ED965B00B52D28 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C07B123ED965B00B52D28 /* FirstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		047C07A223ED943F00B52D28 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdViewController.swift; path = ../../MainTabViewDemoProject/MainTabViewDemoProject/ThirdViewController.swift; sourceTree = "<group>"; };
 		047C07A323ED943F00B52D28 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../MainTabViewDemoProject/MainTabViewDemoProject/ViewController.swift; sourceTree = "<group>"; };
 		047C07A423ED943F00B52D28 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = ../../MainTabViewDemoProject/MainTabViewDemoProject/SecondViewController.swift; sourceTree = "<group>"; };
+		047C07A923ED962800B52D28 /* MainTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		047C07AB23ED962800B52D28 /* MainTabViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabViewDataSource.swift; sourceTree = "<group>"; };
+		047C07AD23ED962800B52D28 /* MainTabDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabDelegate.swift; sourceTree = "<group>"; };
+		047C07B123ED965B00B52D28 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstViewController.swift; path = ../../MainTabViewDemoProject/MainTabViewDemoProject/FirstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				047C076A23ED90B500B52D28 /* ZMainTabView.h */,
+				047C07A823ED962800B52D28 /* MainTabView */,
 				047C076B23ED90B500B52D28 /* Info.plist */,
 			);
 			path = ZMainTabView;
@@ -118,6 +127,7 @@
 			children = (
 				047C078D23ED93CA00B52D28 /* AppDelegate.swift */,
 				047C078F23ED93CA00B52D28 /* SceneDelegate.swift */,
+				047C07B123ED965B00B52D28 /* FirstViewController.swift */,
 				047C07A423ED943F00B52D28 /* SecondViewController.swift */,
 				047C07A223ED943F00B52D28 /* ThirdViewController.swift */,
 				047C07A323ED943F00B52D28 /* ViewController.swift */,
@@ -127,6 +137,33 @@
 				047C079B23ED93CC00B52D28 /* Info.plist */,
 			);
 			path = ZMainTabViewDemo;
+			sourceTree = "<group>";
+		};
+		047C07A823ED962800B52D28 /* MainTabView */ = {
+			isa = PBXGroup;
+			children = (
+				047C07A923ED962800B52D28 /* MainTabView.swift */,
+				047C07AA23ED962800B52D28 /* DataSource */,
+				047C07AC23ED962800B52D28 /* Delegate */,
+			);
+			name = MainTabView;
+			path = ../../MainTabViewDemoProject/MainTabViewDemoProject/MainTabView;
+			sourceTree = "<group>";
+		};
+		047C07AA23ED962800B52D28 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				047C07AB23ED962800B52D28 /* MainTabViewDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		047C07AC23ED962800B52D28 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				047C07AD23ED962800B52D28 /* MainTabDelegate.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +306,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047C07AF23ED962800B52D28 /* MainTabViewDataSource.swift in Sources */,
+				047C07AE23ED962800B52D28 /* MainTabView.swift in Sources */,
+				047C07B023ED962800B52D28 /* MainTabDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +327,7 @@
 				047C078E23ED93CA00B52D28 /* AppDelegate.swift in Sources */,
 				047C07A523ED943F00B52D28 /* ThirdViewController.swift in Sources */,
 				047C07A623ED943F00B52D28 /* ViewController.swift in Sources */,
+				047C07B223ED965B00B52D28 /* FirstViewController.swift in Sources */,
 				047C07A723ED943F00B52D28 /* SecondViewController.swift in Sources */,
 				047C079023ED93CA00B52D28 /* SceneDelegate.swift in Sources */,
 			);
@@ -491,6 +532,7 @@
 		047C077F23ED90B500B52D28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ZMainTabViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -508,6 +550,7 @@
 		047C078023ED90B500B52D28 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ZMainTabViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
