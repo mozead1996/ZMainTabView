@@ -39,6 +39,8 @@ import ZMainTabView
 //here we give it our viewControllers to show 
 
 extension ViewController : MainTabViewDataSource{
+
+// each child UIViewController should conform to TabItem
     
     func viewControllersToBeHosted(in MainTabView: MainTabView) -> [TabItem] {
         let firstVC = instance(FirstViewController.self)//FirstViewController.instance()
